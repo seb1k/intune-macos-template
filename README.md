@@ -21,7 +21,7 @@ https://developer.apple.com/documentation/devicemanagement/passcode
 
 ## Add template
 
-Add this template in Microsoft Intune in the same way as other macOS passcode configuration profiles :
+Add this template in the same way as other macOS passcode configuration profiles :
 
 https://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune#step-2-network-filter
  
