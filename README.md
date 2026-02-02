@@ -7,11 +7,10 @@ This repository contains a template designed to validate macOS security and comp
 
 The template validates the following macOS secure score settings:
 
-- Account lockout threshold set to 5
-- Minimum password length set to 15
-- Maximum password age set to 90 days
-- Enforce password history set to 24 passwords
-
+- Set account lockout threshold to 5 or lower in macOS
+- Set minimum password length to 15 or more characters in macOS
+- Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
+- Set 'Enforce password history' to '24 or more password(s)' in macOS
 
 ## Prerequisites
 
