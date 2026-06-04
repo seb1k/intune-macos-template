@@ -13,7 +13,6 @@ The template validates the following macOS secure score settings:
 - Set 'Enforce password history' to '24 or more password(s)' in macOS
 
 ## Prerequisites
-
 - Microsoft Intune
 - macOS devices enrolled in Intune
 
@@ -32,10 +31,9 @@ Link : [macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#vie
 #### Basics
 - Name : Recommanded security rules (password policy template)
 
-
 #### Configuration Settings
 - Custom configuration profile name : **com.apple.mobiledevice.passwordpolicy**
--  Configuration profile file : put the `com.apple.mobiledevice.passwordpolicy` file from the repo
+- Configuration profile file : Upload the `com.apple.mobiledevice.passwordpolicy` file from this repository.
 
 #### Assignments
 - **All devices**
