@@ -20,7 +20,7 @@ The template validates the following macOS secure score settings:
 https://developer.apple.com/documentation/devicemanagement/passcode
 
 ## Add template : go to Intune > Devices > macOS | Configuration
-[macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/configuration)
+Link : [macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/configuration)
 
 
 - Create new Policy
