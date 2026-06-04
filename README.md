@@ -19,12 +19,32 @@ The template validates the following macOS secure score settings:
 
 https://developer.apple.com/documentation/devicemanagement/passcode
 
-## Add template
+## Add template : go to Intune > Devices > macOS | Configuration
+[macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/configuration)
 
-Add this template in the same way as other macOS passcode configuration profiles :
 
-https://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune#step-2-network-filter
- 
+- Create new Policy
+<img width="212" height="140" alt="image" src="https://github.com/user-attachments/assets/9c36bc69-13e6-4acf-a3ec-e48e6c256804" />
+
+- Custom Template 
+<img width="265" height="358" alt="image" src="https://github.com/user-attachments/assets/f900a98c-1078-4578-86d1-570a358856bf" />
+
+#### Basics
+- Name : Recommanded security rules (password policy template)
+
+
+#### Configuration Settings
+- Custom configuration profile name : **com.apple.mobiledevice.passwordpolicy**
+-  Configuration profile file : put the `com.apple.mobiledevice.passwordpolicy` file from the repo
+
+#### Assignments
+- **All devices**
+
+#### Review + create
+<img width="81" height="28" alt="image" src="https://github.com/user-attachments/assets/0fe79f6a-7e95-40d3-a11b-0f71e39a6841" />
+
+
+
 ## Notes
 
 This template is based on Apple’s macOS passcode configuration profile documentation:
