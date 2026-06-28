@@ -1,6 +1,8 @@
-# Validate macOS policies with Microsoft Intune
+# Intune macOS Password Policy Template
 
-This repository contains a template designed to validate macOS security and compliance policies using **Microsoft Intune**.
+A ready-to-use Apple configuration profile (`.mobileconfig`) to deploy a password policy on macOS devices managed by Microsoft Intune.
+
+This profile is intended to help administrators meet common security recommendations such as Microsoft Secure Score, CIS benchmarks, and internal security policies.
 
 
 ## Validated policies
@@ -12,11 +14,12 @@ The template validates the following macOS secure score settings:
 - Set 'Maximum password age' to '90 or fewer days, but not 0' in macOS
 - Set 'Enforce password history' to '24 or more password(s)' in macOS
 
-## Prerequisites
+
+## Requirements
+
 - Microsoft Intune
 - macOS devices enrolled in Intune
-
-https://developer.apple.com/documentation/devicemanagement/passcode
+- Administrator permissions to create Configuration Profiles
 
 ## Add template : go to Intune > Devices > macOS | Configuration
 Link : [macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#view/Microsoft_Intune_DeviceSettings/DevicesMacOsMenu/~/configuration)
@@ -32,7 +35,7 @@ Link : [macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#vie
 - Name : Recommanded security rules (password policy template)
 
 #### Configuration Settings
-- Custom configuration profile name : **com.apple.mobiledevice.passwordpolicy**
+- Custom configuration profile name : **com.apple.mobiledevice.passwordpolicy.mobileconfig**
 - Configuration profile file : Upload the `com.apple.mobiledevice.passwordpolicy` file from this repository.
 
 #### Assignments
@@ -41,9 +44,41 @@ Link : [macOS | Configuration](https://intune.microsoft.com/?ref=AdminCenter#vie
 #### Review + create
 <img width="81" height="28" alt="image" src="https://github.com/user-attachments/assets/0fe79f6a-7e95-40d3-a11b-0f71e39a6841" />
 
+## Testing
 
+It is recommended to:
+
+- Test on a small pilot group first.
+- Verify deployment in Intune.
+- Confirm the password policy is applied on macOS.
+- Ensure users are informed if a password change is required.
 
 ## Notes
 
 This template is based on Apple’s macOS passcode configuration profile documentation:
 https://developer.apple.com/documentation/devicemanagement/passcode
+
+
+## Testing
+
+It is recommended to:
+
+- Test on a small pilot group first.
+- Verify deployment in Intune.
+- Confirm the password policy is applied on macOS.
+- Ensure users are informed if a password change is required.
+
+## Microsoft Documentation
+
+- https://learn.microsoft.com/intune/device-configuration/custom-settings-configure
+- https://learn.microsoft.com/intune/fundamentals/deployment-guide-enrollment-macos
+
+## License
+
+MIT License
+
+## Disclaimer
+
+This project is provided as-is without warranty.
+
+Always validate configuration profiles in a test environment before deploying them to production devices.
