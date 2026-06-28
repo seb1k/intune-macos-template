@@ -63,10 +63,6 @@ https://developer.apple.com/documentation/devicemanagement/passcode
 - https://learn.microsoft.com/intune/device-configuration/custom-settings-configure
 - https://learn.microsoft.com/intune/fundamentals/deployment-guide-enrollment-macos
 
-## License
-
-MIT License
-
 ## Disclaimer
 
 This project is provided as-is without warranty.
