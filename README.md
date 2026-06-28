@@ -58,16 +58,6 @@ It is recommended to:
 This template is based on Apple’s macOS passcode configuration profile documentation:
 https://developer.apple.com/documentation/devicemanagement/passcode
 
-
-## Testing
-
-It is recommended to:
-
-- Test on a small pilot group first.
-- Verify deployment in Intune.
-- Confirm the password policy is applied on macOS.
-- Ensure users are informed if a password change is required.
-
 ## Microsoft Documentation
 
 - https://learn.microsoft.com/intune/device-configuration/custom-settings-configure
